@@ -136,18 +136,4 @@ public class Campo {
 		marcado = false;
 	}
 
-	public String toString() {
-		if (marcado) {
-			return "x";
-		} else if (aberto && minado) {
-			return "*";
-		} else if (aberto && minasNaVizinhanca() > 0) {
-			return Long.toString(minasNaVizinhanca());
-		} else if (aberto) {
-			return " ";
-		} else {
-			return "?";
-		}
-	}
-
 }
